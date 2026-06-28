@@ -105,57 +105,57 @@
   #print-root .rfollow{ color:var(--ink); font-weight:600; line-height:1.35; }
   #print-root .rfollow .d{ display:inline-block; width:8px;height:8px;border-radius:50%; margin-right:7px; vertical-align:middle; }
   #print-root .pano-foot{ padding:8px 13px; font-size:7.4px; color:var(--soft); font-style:italic; background:var(--mist); border-top:1px solid var(--line); }
-  #print-root .processo{ page-break-before:always; }
-  #print-root .runhead{ display:flex; justify-content:space-between; align-items:center; padding:2px 1px 12px; }
+  #print-root .processo{ page-break-inside:avoid; break-inside:avoid; }
+  #print-root .runhead{ display:flex; justify-content:space-between; align-items:center; padding:2px 1px 8px; }
   #print-root .runhead .rh-logo{ height:28px; }
   #print-root .runhead .rh-idx{ font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.16em; font-size:7px; color:var(--soft); }
   #print-root .runhead .rh-idx b{ color:var(--orange); }
-  #print-root .hero{ position:relative; border-radius:14px; overflow:hidden; padding:18px 22px;
+  #print-root .hero{ position:relative; border-radius:14px; overflow:hidden; padding:13px 20px;
     background:
       repeating-conic-gradient(from 200deg at 12% 130%, rgba(255,201,55,.10) 0deg 5deg, rgba(255,201,55,0) 5deg 11deg),
       radial-gradient(120% 150% at 8% 120%, rgba(251,113,43,.55), rgba(251,113,43,0) 55%),
       linear-gradient(120deg,var(--navy-deep),var(--navy) 55%,var(--navy-2));
     color:#fff; display:flex; justify-content:space-between; align-items:center; gap:20px; }
-  #print-root .hero .emblem{ position:absolute; right:120px; top:50%; transform:translateY(-50%); height:130px; opacity:.10; }
+  #print-root .hero .emblem{ position:absolute; right:120px; top:50%; transform:translateY(-50%); height:112px; opacity:.10; }
   #print-root .hero .label{ color:rgba(255,255,255,.6); }
-  #print-root .hero .proc-no{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:24px; letter-spacing:-.01em; color:#fff; margin-top:4px; line-height:1; }
-  #print-root .hero .cli{ margin-top:9px; font-size:11px; color:rgba(255,255,255,.85); position:relative; }
+  #print-root .hero .proc-no{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:21px; letter-spacing:-.01em; color:#fff; margin-top:3px; line-height:1; }
+  #print-root .hero .cli{ margin-top:6px; font-size:10.5px; color:rgba(255,255,255,.85); position:relative; }
   #print-root .hero .cli b{ color:var(--yellow); font-weight:700; }
   #print-root .badge{ flex:0 0 auto; text-align:center; border-radius:11px; padding:11px 16px; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.18); min-width:120px; }
   #print-root .badge .dot{ display:inline-block; width:8px;height:8px;border-radius:50%; margin-right:5px; vertical-align:middle; }
   #print-root .badge .st{ font-weight:800; font-size:12px; color:#fff; }
   #print-root .badge .sub{ font-size:7px; color:rgba(255,255,255,.65); margin-top:4px; letter-spacing:.08em; font-family:'JetBrains Mono',monospace; }
-  #print-root .stepper{ display:flex; margin:18px 4px 4px; }
+  #print-root .stepper{ display:flex; margin:12px 4px 2px; }
   #print-root .step{ flex:1; text-align:center; }
   #print-root .step .bar{ height:5px; background:var(--mist-2); border-radius:4px; margin:0 2px; }
   #print-root .step.done .bar{ background:var(--navy); }
   #print-root .step.active .bar{ background:linear-gradient(90deg,var(--orange),var(--yellow)); }
-  #print-root .step .node{ width:13px;height:13px;border-radius:50%; background:#fff; border:3px solid var(--mist-2); margin:7px auto 0; }
+  #print-root .step .node{ width:12px;height:12px;border-radius:50%; background:#fff; border:3px solid var(--mist-2); margin:6px auto 0; }
   #print-root .step.done .node{ border-color:var(--navy); background:var(--navy); }
   #print-root .step.active .node{ border-color:var(--orange); background:var(--orange); box-shadow:0 0 0 4px rgba(251,113,43,.18); }
   #print-root .step .nm{ font-size:7.6px; margin-top:6px; color:var(--soft); font-weight:600; line-height:1.2; }
   #print-root .step.done .nm{ color:var(--navy); }
   #print-root .step.active .nm{ color:var(--orange); font-weight:800; }
-  #print-root .legend{ display:flex; gap:18px; align-items:center; margin-top:13px; padding-left:2px; }
+  #print-root .legend{ display:flex; gap:18px; align-items:center; margin-top:9px; padding-left:2px; }
   #print-root .legend .i{ display:flex; align-items:center; gap:6px; font-size:8px; color:var(--soft); }
   #print-root .legend .sq{ width:9px;height:9px;border-radius:3px; }
-  #print-root .grid{ display:grid; grid-template-columns:1fr 1fr; gap:11px; margin-top:18px; }
-  #print-root .card{ border:1px solid var(--line); border-radius:12px; padding:13px 15px; background:var(--paper); }
+  #print-root .grid{ display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-top:11px; }
+  #print-root .card{ border:1px solid var(--line); border-radius:12px; padding:10px 13px; background:var(--paper); }
   #print-root .card.span{ grid-column:1 / -1; }
-  #print-root .card .ttl{ font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.12em; font-size:7px; color:var(--orange); font-weight:600; margin-bottom:10px; border-bottom:1px solid var(--line-soft); padding-bottom:7px; }
-  #print-root .fld{ display:flex; justify-content:space-between; gap:12px; padding:5px 0; }
+  #print-root .card .ttl{ font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.12em; font-size:7px; color:var(--orange); font-weight:600; margin-bottom:7px; border-bottom:1px solid var(--line-soft); padding-bottom:5px; }
+  #print-root .fld{ display:flex; justify-content:space-between; gap:12px; padding:3px 0; }
   #print-root .fld .k{ color:var(--soft); font-size:9px; }
   #print-root .fld .vv{ color:var(--ink); font-weight:700; font-size:10px; text-align:right; }
   #print-root .timeline{ display:grid; grid-template-columns:repeat(2,1fr); }
   #print-root .tl{ padding:2px 14px; border-left:2px solid var(--mist-2); }
   #print-root .tl:first-child{ border-left:none; padding-left:0; }
-  #print-root .tl .d{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:15px; color:var(--navy); margin-top:5px; }
+  #print-root .tl .d{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:14px; color:var(--navy); margin-top:3px; }
   #print-root .prod{ display:flex; flex-wrap:wrap; gap:7px; }
   #print-root .chip{ background:var(--mist); border:1px solid var(--line); border-radius:8px; padding:5px 11px; font-size:9.5px; color:var(--ink); font-weight:600; }
-  #print-root .follow{ grid-column:1 / -1; border-radius:12px; padding:14px 16px; display:flex; gap:13px; align-items:flex-start; background:linear-gradient(180deg,#FFF8EE,#FFFDF8); border:1px solid #FBE3BD; }
+  #print-root .follow{ grid-column:1 / -1; border-radius:12px; padding:11px 14px; display:flex; gap:12px; align-items:flex-start; background:linear-gradient(180deg,#FFF8EE,#FFFDF8); border:1px solid #FBE3BD; }
   #print-root .follow .ic{ width:30px;height:30px;border-radius:9px; flex:0 0 auto; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:15px; background:linear-gradient(135deg,var(--orange),var(--yellow)); }
   #print-root .follow .ft .lbl{ font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:.14em; font-size:6.8px; font-weight:600; color:#B07A1E; }
-  #print-root .follow .ft .msg{ font-size:12px; font-weight:700; color:var(--ink); margin-top:3px; }
+  #print-root .follow .ft .msg{ display:block; font-size:12px; font-weight:700; color:var(--ink); margin-top:3px; }
   #print-root .follow .ft .meta{ font-size:8.5px; color:var(--soft); margin-top:4px; }
   #print-root footer{ display:flex; justify-content:space-between; align-items:center; padding:6px 1px; border-top:1px solid var(--line); margin-top:16px; font-family:'JetBrains Mono',monospace; font-size:6.4px; color:var(--faint); letter-spacing:.06em; text-transform:uppercase; }
   #print-root footer b{ color:var(--orange); font-weight:700; }
@@ -172,7 +172,7 @@
     .app, .preview-head{ display:none !important; }
     .preview-wrap{ background:#fff !important; padding:0 !important; }
     #print-root{ box-shadow:none !important; border-radius:0 !important; max-width:none !important; margin:0 !important; padding:0 !important; }
-    #print-root .processo{ margin-top:0 !important; border-top:none !important; padding-top:0 !important; }
+    #print-root .processo{ margin-top:13px !important; padding-top:12px !important; border-top:1px solid var(--line) !important; }
     #print-root footer{ position:fixed; bottom:0; left:0; right:0; background:#fff; margin-top:0; }
   }
 </style>
@@ -330,7 +330,7 @@
     const sec=document.getElementById("previewSection");
     document.getElementById("prevTitle").textContent = `3 · Prévia — ${registros.length} processo(s)`;
     const t=document.getElementById("previewTable");
-    let h="<thead><tr><th>Processo</th><th>Status</th><th>Follow</th><th>Modalidade</th><th>ETD</th><th>ETA</th><th>Carga</th><th></th></tr></thead><tbody>";
+    let h="<thead><tr><th>Processo</th><th>Status</th><th>Follow</th><th>Modalidade</th><th>Embarque</th><th>Chegada</th><th>Produtos</th><th></th></tr></thead><tbody>";
     registros.forEach((r,i)=>{
       const opts = ['<option value=""></option>'].concat(STAGES.map(s=>`<option ${slug(s)===slug(r.status)?"selected":""}>${s}</option>`)).join("");
       h+=`<tr>
@@ -340,7 +340,7 @@
         <td>${esc(r.modalidade)||"—"}</td>
         <td>${esc(r.etd)||"—"}</td>
         <td>${esc(r.eta)||"—"}</td>
-        <td>${esc(r.tipo_carga)||"—"}</td>
+        <td>${esc(r.produtos)||"—"}</td>
         <td><button class="del" data-i="${i}" title="Remover">&times;</button></td></tr>`;
     });
     h+="</tbody>";
@@ -375,7 +375,7 @@
       <td class="rfollow"><span class="d" style="background:${corStatus(r.status)}"></span>${esc(r.follow)||"—"}</td>
       <td class="rdate">${esc(r.etd)||"—"}</td>
       <td class="rdate">${esc(r.eta)||"—"}</td>
-      <td>${esc(r.tipo_carga)||"—"}</td></tr>`).join("");
+      <td>${(r.produtos||"").split(/[;|]/).map(x=>x.trim()).filter(Boolean).join(", ")||"—"}</td></tr>`).join("");
   }
   function buildBloco(r,i,n,logoCli,emissao){
     const idx=idxStatus(r.status);
@@ -385,7 +385,7 @@
       <div class="runhead"><img class="rh-logo" src="${logoCli}" alt=""><div class="rh-idx">Processo <b>${i}</b> de ${n} &nbsp;·&nbsp; Emitido por TRL Internacional</div></div>
       <div class="hero"><img class="emblem" src="${LOGOS.emblema}" alt="">
         <div><div class="label">Processo</div><div class="proc-no">${g(r.processo)}</div>
-          <div class="cli">Cliente <b>${g(r.cliente||document.getElementById("cliente").value)}</b> &nbsp;·&nbsp; ${g(r.modalidade)} &nbsp;·&nbsp; Carga ${g(r.tipo_carga)}</div></div>
+          <div class="cli">Cliente <b>${g(r.cliente||document.getElementById("cliente").value)}</b> &nbsp;·&nbsp; ${g(r.modalidade)}</div></div>
         <div class="badge"><div><span class="dot" style="background:${corStatus(r.status)}"></span><span class="st">${g(r.status||"Em andamento")}</span></div><div class="sub">${sub}</div></div>
       </div>
       <div class="stepper">${buildStepper(r.status)}</div>
@@ -393,14 +393,13 @@
       <div class="grid">
         <div class="card"><div class="ttl">Operação</div>
           <div class="fld"><span class="k">Modalidade</span><span class="vv">${g(r.modalidade)}</span></div>
-          <div class="fld"><span class="k">Tipo de carga</span><span class="vv">${g(r.tipo_carga)}</span></div>
           <div class="fld"><span class="k">Fornecedor</span><span class="vv">${g(r.fornecedor)}</span></div></div>
         <div class="card"><div class="ttl">Situação</div>
           <div class="fld"><span class="k">Status atual</span><span class="vv" style="color:${corStatus(r.status)}">${g(r.status||"Em andamento")}</span></div>
           <div class="fld"><span class="k">Prontidão</span><span class="vv">${g(r.prontidao)}</span></div></div>
         <div class="card span"><div class="ttl">Cronograma</div>
-          <div class="timeline"><div class="tl"><div class="label">ETD · Embarque</div><div class="d">${g(r.etd)}</div></div>
-          <div class="tl"><div class="label">ETA · Chegada</div><div class="d">${g(r.eta)}</div></div></div></div>
+          <div class="timeline"><div class="tl"><div class="label">Embarque</div><div class="d">${g(r.etd)}</div></div>
+          <div class="tl"><div class="label">Chegada</div><div class="d">${g(r.eta)}</div></div></div></div>
         <div class="card span"><div class="ttl">Produtos</div><div class="prod">${buildProdutos(r.produtos)}</div></div>
         <div class="follow"><div class="ic">!</div><div class="ft"><div class="lbl">Follow · Situação atual</div>
           <div class="msg">${g(r.follow)}</div><div class="meta">Atualizado em ${esc(emissao)}</div></div></div>
@@ -422,8 +421,8 @@
       <div class="panorama"><div class="pano-top">
         <div><div class="lbl">Panorama · ${esc(cliente)}</div><div class="big"><b>${n}</b> processos ativos</div></div>
         <div class="counts">${buildContagem(registros)}</div></div>
-        <table class="resumo"><colgroup><col style="width:13%"><col style="width:49%"><col style="width:13%"><col style="width:13%"><col style="width:12%"></colgroup>
-        <thead><tr><th>Processo</th><th>Follow · Situação atual</th><th>ETD</th><th>ETA</th><th>Carga</th></tr></thead>
+        <table class="resumo"><colgroup><col style="width:12%"><col style="width:40%"><col style="width:13%"><col style="width:13%"><col style="width:22%"></colgroup>
+        <thead><tr><th>Processo</th><th>Follow · Situação atual</th><th>Embarque</th><th>Chegada</th><th>Produtos</th></tr></thead>
         <tbody>${buildResumo(registros)}</tbody></table>
         <div class="pano-foot">Cada processo é detalhado nas páginas a seguir. Documento confidencial destinado ao cliente.</div></div>
       ${blocos}
